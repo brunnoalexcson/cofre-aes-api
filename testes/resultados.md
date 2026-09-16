@@ -35,6 +35,7 @@ Tentei listar os segredos de um cofre com senha errada e retornou o erro 401 Una
 ### Status
 
 Aprovado
+
 ---
 
 ## Teste 3 — O que o invasor enxerga
@@ -77,8 +78,16 @@ Aprovado
 
 ### Procedimento
 
+Copie os campos nonce, criptograma e etiqueta de um segredo para outro segredo do mesmo cofre, e tente ler o segredo de destino.
+
 ### Resultado esperado
+
+A leitura é recusada. O AAD amarra o criptograma ao identificador do registro de origem, e a etiqueta não confere no registro de destino. Este teste demonstra o efeito prático dos dados associados.
 
 ### Resultado observado
 
+Com o nonce, criptograma e etiqueta iguais retornou o erro 500 Internal Server Error - Registro adulterado
+
 ### Status
+
+Aprovado
