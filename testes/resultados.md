@@ -63,13 +63,13 @@ Aprovado
 ## Teste 4 — Registro adulterado
 
 ### Procedimento
-
+Foi alterado manualmente um caractere do campo criptograma de um segredo diretamente no banco de dados. Em seguida, foi realizada a tentativa de leitura do segredo pela API utilizando a senha-mestra correta.
 ### Resultado esperado
-
+Retornar o status 500 sem revelar a senha
 ### Resultado observado
-
+A API retornou erro HTTP 500 ao tentar descriptografar o registro adulterado, não expondo o conteúdo da senha.
 ### Status
-
+Aprovado
 
 ---
 
