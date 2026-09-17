@@ -30,7 +30,7 @@ Resposta 401, sem qualquer conteúdo do segredo no corpo da resposta.
 
 ### Resultado observado
 
-Tentei listar os segredos de um cofre com senha errada e retornou o erro 401 Unauthorized.
+Tentei listar os segredos de um cofre com senha errada e tentei buscar um segredo em específico com senha errada e retornou o erro 401 Unauthorized.
 
 ### Status
 
